@@ -1,0 +1,74 @@
+
+/*Estilo general*/
+
+body {background-color:rgb(187, 241, 187);}
+#wrapper {margin:0 auto;
+          width:80%;}
+
+/*Estilo de hero section*/
+
+#hero {background-image: url("imagenes/chiwo.jpg"); /*coloca la imagen de fondo*/
+       background-size: cover; /*encajar la imagen en el ancho*/
+       background-position: 70%; /*coloca en el punto de interés para el cambio de pantalla*/
+       height:95vh ;} /*Vh es el alto del dispositivo: pc, tablet o móvil de manera que eso es responsive*/
+
+#hero h1{color:white;
+         position:relative; /*para desplazar el texto de suposición*/
+        top:50px;
+        left:70px; 
+        font-family: 'Merienda One', cursive;
+        font-size: 200%;} /*tipo de letra de google fonts, siempre que esté puesto el link arriba fuera del estilo*/
+
+/*Estilo general de las secciones*/
+
+.contenido{background-color: white;
+            margin: 0px;
+            padding: 10px;}
+
+.contenido h1{font-size: 200%;
+              font-family: Merienda One;
+              text-align: center;
+              color: rgb(116, 106, 94) ;}
+
+/*Estilo de bienvenida en dos columnas*/
+
+.mitad{width: 40%;
+      padding: 5%; 
+      text-align: justify;
+      float: left;} /*De esta manera se ponen en paralelo las dos mitades*/
+
+.mitad img{width: 100%;}
+
+.mitad h2{text-align: center;
+          margin-top: 0px;}
+
+/*Estilo de cuidados en dos columnas*/
+.tercio{width: 25%;
+    padding: 4%; 
+    text-align: justify;
+    float: left;} /*De esta manera se ponen en paralelo las dos mitades*/
+    .tercio i{font-size: 300%;
+              text-align: center;
+              display: block;}
+     .tercio button{background-color: rgb(43, 40, 40);
+                     color: blanchedalmond;
+                    border-radius: 10px;
+                    display: block;
+                     margin: 10px auto;}
+
+/*Final de floats*/   
+
+.finfloat{clear:both}
+
+/*Distribución responsive para móviles*/
+/*Las medias query regula el ancho al que la pantalla debe cambiar de configuración en aquellas características que den problemas, reescribiendo su valor*/
+@media screen and (max-width: 800px) {
+    .mitad{width: 90%}
+    .tercio{width: 70%;
+            padding:15%}
+}
+
+@media screen and (max-width: 600px) {
+    #wrapper{width: 100%;}
+    body {padding:0px}
+} 
